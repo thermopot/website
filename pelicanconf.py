@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Potentials'
 SITENAME = 'ThermoPot - interatomic potential database'
-SITEURL = 'http://thermopot.github.io'
+SITEURL = 'https://thermopot.github.io'
 
 PATH = 'content'
 
