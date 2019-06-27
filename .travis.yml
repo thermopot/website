@@ -23,6 +23,6 @@ matrix:
           target_branch: master
           skip_cleanup: true
           github_token: $GH_TOKEN
-          local_dir: public
+          local_dir: ../public
           on:
             branch: master
