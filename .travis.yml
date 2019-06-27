@@ -15,9 +15,9 @@ matrix:
         - conda install conda=4.6.1
         - conda install -c conda-forge beautifulsoup4=4.7.1 ipython=7.2.0 jupyter=1.0.0 markdown=2.6.11 nbconvert=5.4.0 pelican=4.0.1 "tornado<6"
       script:
-        - touch ../public/.nojekyll
         - pelican content
         - python optimise_cache.py ../public/tipuesearch_content.js
+        - touch ../public/.nojekyll
       deploy:
         - provider: pages
           repo: thermopot/thermopot.github.io
