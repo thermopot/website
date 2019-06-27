@@ -17,3 +17,12 @@ matrix:
       script:
         - pelican content
         - python optimise_cache.py ../public/tipuesearch_content.js
+      deploy:
+        - provider: pages
+          repo: thermopot/thermopot.github.io
+          target_branch: master
+          skip_cleanup: true
+          github_token: $GH_TOKEN
+          local_dir: public
+          on:
+            branch: master
